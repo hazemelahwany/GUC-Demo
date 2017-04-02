@@ -57,9 +57,9 @@ public class MainActivity extends AppCompatActivity {
         @Override
         protected Void doInBackground(final String... strings) {
             // Create a new CloudantClient instance for account endpoint example.cloudant.com
-            CloudantClient client = ClientBuilder.account("fc8bd5c4-9c15-4f9f-a8aa-18ee68c8be35-bluemix")
-                    .username("fc8bd5c4-9c15-4f9f-a8aa-18ee68c8be35-bluemix")
-                    .password("5b3108012ddad1d68e39d23cb3a988868a7fb3a92376575b0f6033a967a50ba4")
+            CloudantClient client = ClientBuilder.account("hostname")
+                    .username("username from credintials")
+                    .password("password from credintials")
                     .build();
 
             // Show the server version
